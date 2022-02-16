@@ -1,0 +1,76 @@
+body{
+    margin: 0px 5px 5px 5px;
+}
+
+.chord{
+    color: #1b6d85;
+    font-weight: bolder;
+    background: rgba(154, 207, 254, 0.5);
+    border-radius: 5px;
+    padding: 0px 3px 0px 3px;
+}
+
+.infoMy{
+    color: aliceblue;
+    font-size: medium;
+}
+
+.linkMy{
+    color: #3190d5;
+    font-weight: bold;
+}
+
+ul.errors{
+    display: inline;
+    font-size: large;
+    color: whitesmoke;
+}
+
+.noError .errors{
+    list-style: none;
+    color: #c7ddef;
+}
+
+.noSpace{
+    padding: 0px;
+    margin: 0px;
+}
+
+.noError ul.errors{
+    display: none;
+}
+
+.hTwos{
+    color: #d9e9f3;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#facebook{
+    color:#adadad;
+    font-size:24px
+}
+
+#facebook:hover{
+    color: #2e6da4;
+    font-size:24px
+}
+
+#gitlab{
+    color: #adadad;
+    font-size:24px
+}
+
+#gitlab:hover{
+    color: darkorange;
+    font-size:24px
+}
+
+#insta{
+    color:#adadad;
+    font-size:24px
+}
+
+#insta:hover{
+    color: #ad5e9b;
+    font-size:24px
+}

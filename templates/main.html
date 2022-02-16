@@ -1,0 +1,26 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+{% from "_formhelpers.html" import render_field %}
+
+<div class="row">
+    <div class="noError col-md-7 col-md-offset-2 col-xs-12">
+
+        <form method=post action="/">
+            <dl>
+                {{ form.csrf_token }}
+                <h4 style="margin: 0px; padding: 0px; color: #37bfcf; font-weight: bold"> Copy lyrics with chords here <span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span></h4>
+                {% for fieldName, errorMessages in form.errors.items() %}
+                {% for err in errorMessages %}
+                    <p> {{err}}</p>
+                {% endfor %}
+                {% endfor %}
+                {{render_field(form.content, class="col-md-12 col-xs-12 changeHe", rows="22", style="resize: none; white-space: pre;
+                overflow-wrap: normal; overflow-x: scroll; overflow-y: scroll; font-size: medium; font-family: 'Courier New', Courier, monospace")}}
+            </dl>
+                <button type="submit" class="btn btn-info btn-lg">FIND CHORDS!</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

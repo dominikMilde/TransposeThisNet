@@ -1,0 +1,40 @@
+{% extends "navbar.html" %}
+
+{%block content%}
+<div class="row">
+    <div class="col-md-7 col-md-offset-2 col-xs-12">
+        <div id="copyArea" class="col-md-10 col-xs-9", style="height: 35em; color: black; background-color: white; resize: none; white-space: pre;
+        overflow-wrap: normal; overflow-x: scroll; overflow-y: scroll; font-size: medium; font-family: 'Courier New', Courier, monospace"
+             readonly>{{finalString}}</div>
+        <div class="col-md-2 col-xs-3">
+        <ul class="list-group">
+            <a href="#"><li id="six" class="transpose list-group-item">+6</li></a>
+            <a href="#"><li id="five" class="transpose list-group-item ">+5</li></a>
+            <a href="#"><li id="four" class="transpose list-group-item">+4</li></a>
+            <a href="#"><li id="three" class="transpose list-group-item">+3</li></a>
+            <a href="#"><li id="two" class="transpose list-group-item">+2</li></a>
+            <a href="#"><li id="one" class="transpose list-group-item">+1</li></a>
+            <a href="#"><li id="zero" class="transpose list-group-item active">ORIGINAL</li></a>
+            <a href="#"><li id="_one" class="transpose list-group-item">-1</li></a>
+            <a href="#"><li id="_two" class="transpose list-group-item">-2</li></a>
+            <a href="#"><li id="_three" class="transpose list-group-item">-3</li></a>
+            <a href="#"><li id="_four" class="transpose list-group-item">-4</li></a>
+            <a href="#"><li id="_five"  class="transpose list-group-item">-5</li></a>
+        </ul>
+        </div>
+    </div>
+</div>  <!--endrow-->
+    <button id="btnCopy" class="btn btn-info btn-lg col-md-offset-2">Copy lyrics!</button>
+
+
+<div class="row">
+    <div class="col-md-5 col-md-offset-2 col-xs-11">
+        <div class="alert alert-light alert-dismissible fade in infoMy">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Double-click</strong> the chord to mark it as text, you also can redo this action! <br>
+            If you think there was an error during process, please check <a class="linkMy" href="/info">Info</a> page or <a class="linkMy" href="/report">report an bug</a> !
+        </div>
+    </div>
+</div>
+
+{%endblock%}

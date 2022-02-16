@@ -1,0 +1,76 @@
+{% extends "navbar.html" %}
+
+{%block content%}
+
+<div class="col-md-offset-2 col-md-3 col-xs-10">
+    <h1 style="color: #2f90a1; margin-bottom: 1em"> How to use? </h1>
+    <h4 class="hTwos"> Although the app was designed to be as much <i>bugproof</i> as possible, there are some instructions that
+        must be mentioned.</h4> <h4 class="hTwos">Paste lyrics where chords and text are separated in columns - chords on the top or on the
+        bottom of the text, <strong>not</strong> in the same line.</h4>
+    <h4 class="hTwos">
+        Also, chords should be written in capital letters and there should be blank space before and after every chord --> Am7/C is well written chord.
+        <br>
+        However, if you follow this rules and still find an error, you can double-click chord to change it to text or other way around.
+    </h4>
+</div>
+<div class="col-md-4 col-xs-12">
+    <h3 style="color: #2f90a1;"> Example of good lyrics:</h3>
+    <textarea rows="10", style=" width: 100%; resize: none; white-space: pre; overflow-wrap: normal; overflow-x: scroll; overflow-y: scroll; font-family: 'Courier New', Courier, monospace" readonly>
+[Intro]
+  F#                     A#m        D#m               G#m  C#
+Tonight I’m gonna have myself real good time, I feel alive
+        F#          F#7             B            G#m7               D#7
+And the world, I'll turn it inside out yeah, I'm floating around in ecstasy
+   G#m   F#   C# G#m  G#m   F#   C#
+So don’t stop me now, don’t stop me
+          G#m      F#/G# G#m7  C#        D#m7/C# C#7
+Cause I’m having a good time, having a  good   time
+
+[Verse 1]
+      F#                                A#m          D#m
+I’m a shooting star leaping through the sky, like a tiger
+             G#m         C#
+Defying the laws of gravity
+      F#                 A#m              D#m
+I’m a racing car passing by, like Lady Godiva
+          G#m         C#                   F#
+I’m gonna go, go, go, there’s no stopping me
+    </textarea>
+</div>
+
+<div class="col-md-7 col-md-offset-2 col-xs-10" style="margin-top: 1em">
+    <h4 class="hTwos">NOTE: processed lyrics could be slightly different from those you pasted. If you think something went wrong or if you find a bug, I would appreciate if you <a href="/report">reported</a> it so the issue could be solved!</h4>
+    <hr>
+</div>
+
+<div class="col-md-offset-2 col-md-5 col-xs-10">
+    <h1 style="color: #2f90a1; margin-bottom: 1em"> About project and developer </h1>
+    <h4 class="hTwos"> This web app is a result of the final middle school project. <a target="_blank" href="https://www.tsd.hr/site/">(Tehnička škola Daruvar, CRO)</a> </h4>
+    <h4 class="hTwos">
+        This website is Flask an JS based project by Dominik Milde. The idea for this project came from my passion for music and
+        computer programming. </h4> <h4 class="hTwos"> Also, I saw there was no functional website where you could transpose
+        chords to another tune (or they were pretty bugged, to say the least). <br> There is an Windows desktop app
+        that you can download by clicking on the <a href="/download">DOWNLOAD</a> link in the menu.
+        It is still in development, though. But I hope it will work for you when you're offline.
+    </h4>
+</div>
+
+<div class="col-xs-10 col-md-3">
+    <img class="img-circle" src="static/photos/me.jpg" width="300px">
+    <br>
+</div>
+
+<div class="col-md-7 col-md-offset-2 col-xs-12">
+    <hr style="margin-bottom: 2px;">
+</div>
+
+<div class= "col-md-3 col-md-offset-2 col-xs-6" style="color: ghostwhite">
+    <p style="margin: 2px;">Dominik Milde, 2018 &copy;</p>
+</div>
+<div class="col-md-offset-3 col-md-2 col-xs-5 col-xs-offset-1">
+    <a target="_blank" id="facebook" href="https://www.facebook.com/mominik.dilde"><i class="fa fa-facebook-square"></i></a>
+    <a target="_blank" id="gitlab"href="https://gitlab.com/dominikMilde"><i class="fa fa-gitlab"></i></a>
+    <a target="_blank" id="insta" href="https://www.instagram.com/mominik.dilde/"><i class="fa fa-instagram"></i></a>
+</div>
+
+{%endblock%}

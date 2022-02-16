@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>transposeThis - the BEST online transposer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='photos/logo.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src = "{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src = "{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src = "{{ url_for('static', filename='js/nav.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</head>
+
+<body style="background-image: url(static/photos/background.png)">
+
+<div class="row navbar navbar-default">
+    <a href="/">
+    <div class="col-md-1 col-md-offset-2 col-xs-2">
+        <img class="img-responsive" src="static/photos/logo.png" alt="logo">
+    </div>
+    <div class="cod-md-3">
+        <img class="img-responsive col-md-4 col-xs-8"  src="static/photos/croppedLogo.png">
+    </div>
+
+    </a>
+    <button id="btnHide" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavBar" aria-expanded="false" aria-controls="navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+{% block body %}
+{% endblock %}
+
+</body>
+
+</html>
